@@ -1,0 +1,14 @@
+{
+  "name": "solo-ttrpg",
+  "version": "1.0.0",
+  "description": "Assistant to help you on your solo role playing journeys",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Jamie Kasulis",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
