@@ -1,11 +1,17 @@
 import * as fs from 'fs';
 
 /*
- * TODO: Map from TableNameEnum to Files, which should all be stored in this directory.
- * Then we will have some process of reading the file contents.
+ * REGISTER NEW TABLES HERE!
  */
-
-enum TableNameEnum {
+export enum TableNameEnum {
     NAMES,
     CHARACTER_TRAITS,
 }
+
+/*
+ * REGISTER NEW TABLE FILES HERE!
+ */
+export const TableNameToFilePath: Map<TableNameEnum, string> = new Map<TableNameEnum, string>([
+    [TableNameEnum.NAMES, './names.csv'],
+    [TableNameEnum.CHARACTER_TRAITS, './character-traits.csv']
+]);
