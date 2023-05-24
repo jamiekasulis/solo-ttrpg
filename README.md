@@ -1,13 +1,26 @@
-# About this project
-This is an application that allows you to play TTRPGs solo.
+# About this Project
+To fill in
 
-# Developer guide
+# Developer Guide
+
+## Project structure
+This project was initialized and set up following [this guide from HowToGraphQL](https://www.howtographql.com/typescript-helix/1-project-setup/). It is a Typescript project using ES2016 syntax ('import' rather than 'require'). 
+
+### Notes on configuration
+- The project uses ts-node and ts-node-dev to run .ts files directly, without needing to first transpile them into javascript
+- The app entrypoint is src/index.ts, as defined in package.json
+
+### Files
+- `package.json` was created via `npm init`, which set up the scaffolding for the empty project. This is where we track which NPM packages and versions the project is using. It gets automatically updated upon using `npm install`
+- `tsconfig.json` configures typescript for the project,
 
 ## Running the app
-To run the sever from your terminal, enter `node app.js` from the project's root. Then navigate to http://localhost:3000
 
-## Layout of files
-- `package.json` was created via `npm init`, which set up the scaffolding for the empty project. This is where we track which NPM packages and versions the project is using. It gets automatically updated upon using `npm install`
+Two options:
+- npm run start
+- npm run dev, which will restart the server on every change (supposedly)
+
+Then navigate to http://localhost:3000
 
 # Feature wishlist
 
