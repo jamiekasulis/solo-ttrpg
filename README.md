@@ -14,6 +14,11 @@ This project was initialized and set up following [this guide from HowToGraphQL]
 - `package.json` was created via `npm init`, which set up the scaffolding for the empty project. This is where we track which NPM packages and versions the project is using. It gets automatically updated upon using `npm install`
 - `tsconfig.json` configures typescript for the project,
 
+### Tools
+- NPM - Node Package Manager. Install packages with this
+- NPX - A tool for executing node packages
+- Jest - for unit testing
+
 ## Running the app
 
 Two options:
