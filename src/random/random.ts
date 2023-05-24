@@ -21,7 +21,7 @@ class Random {
     }
 
     /**
-     * Returns a random int between [0, max)
+     * Returns a random int between [1, max)
      * @param max Exclusive
      */
     static getRandomInt = (max: number): number => {
