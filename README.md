@@ -1,5 +1,5 @@
 # About this Project
-To fill in
+This application is going to be a tool to help your solo TTRPG adventures go more smoothly!
 
 # Developer Guide
 
