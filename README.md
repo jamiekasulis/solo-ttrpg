@@ -21,11 +21,9 @@ This project was initialized and set up following [this guide from HowToGraphQL]
 
 ## Running the app
 
-Two options:
-- npm run start
-- npm run dev, which will restart the server on every change (supposedly)
+Run `npm start` from either `client/` or `server/`.
 
-Then navigate to http://localhost:3000
+Then navigate to http://localhost:3000 for the client or http://localhost:8080 for server.
 
 # Feature wishlist
 
