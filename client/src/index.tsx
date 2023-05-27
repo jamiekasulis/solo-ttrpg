@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './SampleApp/App';
 import reportWebVitals from './reportWebVitals';
+import OracleTable from './oracle/OracleTable';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <OracleTable title='Admirable traits' elements={['Loyalty', 'Kindness', 'Smells nice']} />
   </React.StrictMode>
 );
 
