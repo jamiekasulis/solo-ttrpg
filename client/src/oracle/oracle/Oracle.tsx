@@ -5,8 +5,9 @@
  * and displayed in the textarea.
  */
 import React, { FC, useState } from 'react';
-import { OracleTable } from './OracleTable';
-import { Random } from '../random/random';
+import { OracleTable } from '../OracleTable';
+import { Random } from '../../random/random';
+import './oracle.css';
 
 interface OracleProps {
     data: Array<string>, // list of data to render in table
@@ -25,11 +26,13 @@ export const Oracle: FC<OracleProps> = ({
     }
 
     return (
-        <div id='root_container'>
+        <div id="root_container">
             <OracleTable title={title} elements={data} />
             <div id='action_container'>
-                <button onClick={() => rollAndShowResult()}>Roll!</button>
-                <label id='roll_result_label'>{rollResult || 'Roll'}</label>
+                <button id='roll_button' onClick={() => rollAndShowResult()}>Roll!</button>
+                <label className='roll_result_label'>
+                    {rollResult || 'Click Roll to get a result'}
+                    </label>
             </div>
         </div>
     );

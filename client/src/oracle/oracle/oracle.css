@@ -1,0 +1,11 @@
+
+.action_container {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+}
+
+.roll_button {
+    width: 50%;
+}
