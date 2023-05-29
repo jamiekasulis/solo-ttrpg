@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './SampleApp/App';
 import reportWebVitals from './reportWebVitals';
-import OracleTable from './oracle/OracleTable';
+import { Oracle } from './oracle/Oracle';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <OracleTable title='Admirable traits' elements={['Loyalty', 'Kindness', 'Smells nice']} />
+    <Oracle title='Dog breeds' data={['Schnauzer', 'Pekingese', 'Border Collie']} />
   </React.StrictMode>
 );
 

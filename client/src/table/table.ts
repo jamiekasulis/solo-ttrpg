@@ -4,7 +4,7 @@
  * to enable things like sorting/filtering, as well as the
  * option to shuffle the list so that elements get new numbers.
  */
-class Table<T> {
+export class Table<T> {
     private elts: Array<T> = [];
 
     Table(elts: Array<T>) {

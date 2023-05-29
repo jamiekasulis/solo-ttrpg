@@ -5,7 +5,7 @@ interface OracleTableProps {
     elements: Array<string>;
 }
 
-const OracleTable: FC<OracleTableProps> = ({
+export const OracleTable: FC<OracleTableProps> = ({
     title,
     elements,
 }) => {

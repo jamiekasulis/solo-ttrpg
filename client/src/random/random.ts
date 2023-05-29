@@ -2,7 +2,7 @@
 /**
  * Randomization functionality
  */
-class Random {
+export class Random {
 
     /**
      * @param start
@@ -25,7 +25,7 @@ class Random {
      * @param max Exclusive
      */
     static getRandomInt = (max: number): number => {
-        return Math.floor(Math.random() * max);
+        return Math.floor(Math.random() * max) + 1;
     }
 }
 
