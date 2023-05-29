@@ -13,7 +13,7 @@ export const OracleTable: FC<OracleTableProps> = ({
         <>
             <h1>{title}</h1>
             <ol>
-                {elements.map(elt => <li>{elt}</li>)}
+                {elements.map((elt, i) => <li key={i}>{elt}</li>)}
             </ol>
         </>
     )

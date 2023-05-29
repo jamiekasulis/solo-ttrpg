@@ -1,5 +1,8 @@
 /**
  * Oracle includes a Table, Roll button, and a text box to show the result.
+ * 
+ * When the Roll button is clicked, a random element from data is selected
+ * and displayed in the textarea.
  */
 import React, { FC, useState } from 'react';
 import { OracleTable } from './OracleTable';
@@ -25,8 +28,8 @@ export const Oracle: FC<OracleProps> = ({
         <div id='root_container'>
             <OracleTable title={title} elements={data} />
             <div id='action_container'>
-                <button onClick={() => rollAndShowResult()}>Testing</button>
-                <textarea value={rollResult} />
+                <button onClick={() => rollAndShowResult()}>Roll!</button>
+                <label id='roll_result_label'>{rollResult || 'Roll'}</label>
             </div>
         </div>
     );
