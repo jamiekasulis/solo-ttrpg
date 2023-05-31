@@ -1,0 +1,9 @@
+.table_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.table_col {
+    display: flex;
+    flex-direction: column;
+}

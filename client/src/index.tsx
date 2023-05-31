@@ -4,7 +4,13 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { Oracle } from './oracle/oracle/Oracle';
 
-const data = ['Schnauzer', 'Pekingese', 'Border Collie', 'Wire Fox Terrier', 'Airedale Terrier', 'Chocolate Labrador'];
+const data = [
+  'Schnauzer', 'Doberman Pinscher', 'Wire Fox Terrier', 'Pekingese', 'Border Collie',
+  'Chocolate Labrador', 'German Shepherd', 'Airedale Terrier', 'Bull Terrier', 'Yorkshire Terrier',
+  'Poodle', 'Shitzu', 'Rottweiler', 'Golden Retriever', 'Chihuahua',
+  'Chow-chow', 'Jindo', 'Pomeranian', 'Dalmatian', 'Wheaton Terrier',
+  'Bassett Hound', 'Great Dane'
+];
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

@@ -5,7 +5,7 @@
  * and displayed in the textarea.
  */
 import React, { FC, useState } from 'react';
-import { OracleTable } from '../OracleTable';
+import { OracleTable } from '../oracleTable/OracleTable';
 import { Random } from '../../random/random';
 import './oracle.css';
 
