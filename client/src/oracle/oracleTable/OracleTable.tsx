@@ -23,23 +23,25 @@ export const OracleTable: FC<OracleTableProps> = ({
     return (
         <div id='root_container'>
             <h1>{title}</h1>
-            {dataTable.map((row, r) => 
-                <div className='table_row'>
-                    {dataTable[r].map((col, c) =>
-                        <div className='table_col'>
-                            <ul>
-                                {
-                                    dataTable[r][c].map((elt, idx) => 
-                                        <p>
-                                            {getElementNumberByTablePosition(r, c, idx)}. {dataTable[r][c][idx]}
-                                        </p>
-                                    )
-                                }
-                            </ul>
-                        </div>
-                    )}
-                </div>
-            )}
+            <div id='row_container'>
+                {dataTable.map((row, r) => 
+                    <div className='table_row'>
+                        {dataTable[r].map((col, c) =>
+                            <div className='table_col'>
+                                <ul>
+                                    {
+                                        dataTable[r][c].map((elt, idx) => 
+                                            <p>
+                                                {getElementNumberByTablePosition(r, c, idx)}. {dataTable[r][c][idx]}
+                                            </p>
+                                        )
+                                    }
+                                </ul>
+                            </div>
+                        )}
+                    </div>
+                )}
+            </div>
         </div>
     )
 }
