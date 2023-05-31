@@ -9,6 +9,7 @@ export const OracleTable: FC<OracleTableProps> = ({
     title,
     elements,
 }) => {
+
     return (
         <>
             <h1>{title}</h1>

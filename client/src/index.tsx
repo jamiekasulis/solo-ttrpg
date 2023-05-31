@@ -4,12 +4,14 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { Oracle } from './oracle/oracle/Oracle';
 
+const data = ['Schnauzer', 'Pekingese', 'Border Collie', 'Wire Fox Terrier', 'Airedale Terrier', 'Chocolate Labrador'];
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Oracle title='Dog breeds' data={['Schnauzer', 'Pekingese', 'Border Collie']} />
+    <Oracle title='Dog breeds' data={data} />
   </React.StrictMode>
 );
 
