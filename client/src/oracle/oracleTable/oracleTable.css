@@ -1,13 +1,42 @@
+.oracle_table_root_container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row_container {
+    overflow-y: scroll;
+    height: 300px;
+}
+
 .table_row {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
 }
 
 .table_col {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .table_col ul p {
     margin: 4px;
+}
+
+h1 {
+    padding-left: 20px;
+    font-style: italic;
+}
+
+.ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.list_element_number {
+    font-weight: 100;
 }

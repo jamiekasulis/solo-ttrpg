@@ -21,7 +21,7 @@ export const OracleTable: FC<OracleTableProps> = ({
     }
 
     return (
-        <div id='root_container'>
+        <div className='oracle_table_root_container'>
             <h1>{title}</h1>
             <div id='row_container'>
                 {dataTable.map((row, r) => 
@@ -32,7 +32,7 @@ export const OracleTable: FC<OracleTableProps> = ({
                                     {
                                         dataTable[r][c].map((elt, idx) => 
                                             <p>
-                                                {getElementNumberByTablePosition(r, c, idx)}. {dataTable[r][c][idx]}
+                                                <strong className='list_element_number'>{getElementNumberByTablePosition(r, c, idx)}</strong>. <em>{dataTable[r][c][idx]}</em>
                                             </p>
                                         )
                                     }
