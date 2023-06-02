@@ -26,12 +26,12 @@ export const Oracle: FC<OracleProps> = ({
     }
 
     return (
-        <div id="oracle_root_container">
+        <div className="oracle_root_container">
             <OracleTable title={title} elements={data} />
-            <div id='action_container'>
-                <button id='roll_button' onClick={() => rollAndShowResult()}>Roll!</button>
+            <div className='action_container'>
+                <button className='roll_button' onClick={() => rollAndShowResult()}>Roll!</button>
                 <label className='roll_result_label'>
-                    {rollResult || 'Click Roll to get a result'}
+                    {rollResult || 'Click "Roll!" to get a result'}
                     </label>
             </div>
         </div>
