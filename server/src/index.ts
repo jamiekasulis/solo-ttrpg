@@ -1,21 +1,22 @@
 /**
  * This is the application entrypoint!
  */
-import http from 'http';
+const express = require('express');
 
 // @TODO Move this to config ingestion.
-const hostname = '127.0.0.1';
 const port = 8080;
 
+const app = express();
 
-// The function http.createServer() creates and returns an HTTP server.
-// See https://nodejs.org/api/http.html#httpcreateserveroptions-requestlistener
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello there! You are running the solo-ttrpg server.');
+app.get('/', (req: any, res: any) => {
+    res.send('Hello World!')
 });
 
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+app.get('/test', (req: any, res: any) => {
+    res.statusCode = 200;
+    res.send('TEST');
+});
+
+app.listen(port, () => {
+    console.log(`Server listening on port ${port}`)
 });
