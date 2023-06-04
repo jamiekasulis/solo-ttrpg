@@ -14,4 +14,4 @@ COPY . .
 # Run the node application
 CMD ["npm", "start"]
 
-EXPOSE 3000
+EXPOSE 8080

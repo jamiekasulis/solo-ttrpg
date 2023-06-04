@@ -5,7 +5,9 @@ This application is going to be a tool to help your solo TTRPG adventures go mor
 
 ## Setup
 
-1. [Install Docker](https://docs.docker.com/get-docker/)
+1. [**Install Docker**](https://docs.docker.com/get-docker/)
+2. **Build the image.** From the `/server` folder, run `docker build -t solo-ttrpg .` to build the image.
+3. **Run the container.** Execute `docker run -p 8080:8080 solo-ttrpg` . To test it's working, run `curl -i localhost:8080`
 
 ## Project structure
 This project was initialized and set up following [this guide from HowToGraphQL](https://www.howtographql.com/typescript-helix/1-project-setup/). It is a Typescript project using ES2016 syntax ('import' rather than 'require'). 
