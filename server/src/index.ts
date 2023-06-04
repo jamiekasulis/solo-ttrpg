@@ -1,20 +1,24 @@
 /**
  * This is the application entrypoint!
  */
-import http from 'http';
-import Random from './random/random';
+const express = require('express');
 
-const hostname = '127.0.0.1';
+// @TODO Move this to config ingestion.
 const port = 8080;
 
-// The function http.createServer() creates and returns an HTTP server.
-// See https://nodejs.org/api/http.html#httpcreateserveroptions-requestlistener
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end(Random.getRandomInt(10).toString());
+const app = express();
+
+app.get('/', (req: any, res: any) => {
+    res.send('Hello World!')
 });
 
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+app.get('/test', (req: any, res: any) => {
+    res.statusCode = 200;
+    res.send('TEST');
+});
+
+// The host must be 0.0.0.0 to work with Docker. 
+// See https://stackoverflow.com/questions/65721320/localhost-didn-t-send-any-data-err-empty-response-nodejs
+app.listen(port, '0.0.0.0', () => {
+    console.log(`Server listening on port ${port}`)
 });
