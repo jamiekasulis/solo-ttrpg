@@ -3,6 +3,10 @@ This application is going to be a tool to help your solo TTRPG adventures go mor
 
 # Developer Guide
 
+## Setup
+
+1. [Install Docker](https://docs.docker.com/get-docker/)
+
 ## Project structure
 This project was initialized and set up following [this guide from HowToGraphQL](https://www.howtographql.com/typescript-helix/1-project-setup/). It is a Typescript project using ES2016 syntax ('import' rather than 'require'). 
 
