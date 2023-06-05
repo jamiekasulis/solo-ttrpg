@@ -13,12 +13,11 @@ export const app = express();
 // Ingest config
 const configTemplate = fs.readFileSync('config.yaml', 'utf8');
 const configStr = ejs.render(configTemplate);
-const config = yaml.load(configStr, 'utf-8');
+export const config = yaml.load(configStr, 'utf-8');
 console.log('Starting server with config', config);
 
-// DB setup
+// Setup DB
 export const nano = require('nano')(`http://${config.database.user.username}:${config.database.user.password}@${config.database.host}:${config.database.port}`);
-export const db = nano.use(config.database.name);
 
 // Attach routers
 export const rootRouter = express.Router();
