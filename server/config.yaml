@@ -1,2 +1,10 @@
-port: <%= process.env.PORT %>
-host: <%= process.env.HOST %>
+app:
+  port: <%= process.env.APP_PORT %>
+  host: <%= process.env.APP_HOST %>
+database:
+  host: <%= process.env.DB_HOST %>
+  port: <%= process.env.DB_PORT %>
+  name: solo-ttrpg
+  user:
+    username: <%= process.env.DB_USER %>
+    password: <%= process.env.DB_PASS %>
