@@ -15,6 +15,7 @@ This project was initialized and set up following [this guide from HowToGraphQL]
 ### Notes on configuration
 - The project uses ts-node and ts-node-dev to run .ts files directly, without needing to first transpile them into javascript
 - The app entrypoint is src/index.ts, as defined in package.json
+- This project uses the dotenv and EJS packages to ingest environment variables through each module's `.env` file into its configuration file `config.yaml`.
 
 ### Files
 - `package.json` was created via `npm init`, which set up the scaffolding for the empty project. This is where we track which NPM packages and versions the project is using. It gets automatically updated upon using `npm install`
